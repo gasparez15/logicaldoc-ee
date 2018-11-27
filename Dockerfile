@@ -1,4 +1,4 @@
-# LogicalDOC Document Management System ( http://www.logicaldoc.com )
+# LogicalDOC Document Management System ( https://www.logicaldoc.com )
 FROM phusion/baseimage
 MAINTAINER "Alessandro Gasparini" <devel@logicaldoc.com>
  
