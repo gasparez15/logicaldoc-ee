@@ -1,5 +1,5 @@
 # LogicalDOC Enterprise Edition
-Official Docker image for LogicalDOC Enterprise.
+Unofficial Docker image for LogicalDOC Enterprise.
 Note: This image requires to be connected to an external database
 
 ## What is LogicalDOC ?
