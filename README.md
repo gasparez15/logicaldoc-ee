@@ -7,9 +7,9 @@ The LogicalDOC is a flexible and highly performant Document Management System pl
 
 ![LogicalDOC](https://www.logicaldoc.com/images/assets/LogicalDocWhiteH02-167.png)
 
-* **Manuals**: http://docs.logicaldoc.com
+* **Manuals**: https://docs.logicaldoc.com
 * **Twitter**: https://twitter.com/logicaldoc
-* **Blog**: http://blog.logicaldoc.com
+* **Blog**: https://www.logicaldoc.com/blog
 
 ### How to use this image
 
@@ -55,5 +55,5 @@ The LogicalDOC image uses environment variables that allow to obtain a more spec
 * **DB_PASSWORD**: the password (default is 'changeme')
 
 ## Docker-Compose
-Some docker-compose examples are available in the repository of this container on GitHub https://github.com/logicaldoc/logicaldoc-ee
+Some docker-compose examples are available in the repository of this container on GitHub https://github.com/gasparez15/logicaldoc-ee
 
