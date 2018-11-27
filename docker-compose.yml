@@ -1,0 +1,38 @@
+version: '2'
+services:
+ db:
+  container_name: mysql-ld
+  image: mysql:5.7
+  volumes:
+   - ldoc_db:/var/lib/mysql
+  ports:
+   - 3306:3306
+  environment:
+   - MYSQL_ROOT_PASSWORD=mysqlroot
+   - MYSQL_DATABASE=logicaldoc
+   - MYSQL_USER=ldoc
+   - MYSQL_PASSWORD=changeme
+
+ logicaldoc:
+  depends_on:
+   - db
+  container_name: logicaldoc
+  image: logicaldoc/logicaldoc-ee
+  ports:
+   - 8080:8080
+  environment:
+   - LDOC_MEMORY=2000
+   - DB_HOST=mysql-ld
+   - DB_NAME=logicaldoc
+   - DB_USER=ldoc
+   - DB_PASSWORD=changeme
+  volumes:
+   - ldoc_conf:/opt/logicaldoc/conf
+   - ldoc_repository:/opt/logicaldoc/repository
+
+volumes:
+  ldoc_db:
+  ldoc_conf:
+  ldoc_repository:
+
+
