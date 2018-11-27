@@ -47,10 +47,10 @@ RUN apt-get -y install \
     pdftohtml \
     openssl
 
-# Setup LibreOffice 5.3.x from libreoffice/ppa
-# https://launchpad.net/~libreoffice/+archive/ubuntu/ppa
+# Setup LibreOffice 5.4.x from libreoffice/ppa
+# https://launchpad.net/~libreoffice/+archive/libreoffice-5-4
 RUN \
-  add-apt-repository -y ppa:libreoffice/libreoffice-5-3 && \
+  add-apt-repository -y ppa:libreoffice/libreoffice-5-4 && \
   apt-get update && \
   apt-get install -y libreoffice
 
